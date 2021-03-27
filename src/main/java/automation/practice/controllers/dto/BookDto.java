@@ -4,11 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 public class BookDto {
-    public BookDto(String id, String name, String author) {
-        this.id = id;
-        this.name = name;
-        this.author = author;
-    }
 
     @Getter
     @Setter
@@ -21,4 +16,14 @@ public class BookDto {
     @Getter
     @Setter
     private String author;
+	
+	public BookDto() {
+		
+	}
+	
+    public BookDto(String id, String name, String author) {
+        this.id = id;
+        this.name = name;
+        this.author = author;
+    }
 }
